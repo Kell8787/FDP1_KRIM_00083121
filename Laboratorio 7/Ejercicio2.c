@@ -1,56 +1,51 @@
-//Kelvin Rodrigo Iraheta Morales 00083121
+// Kelvin Rodrigo Iraheta Morales 00083121
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
 
 int main()
-{  
-    FILE *ArchivoPos = fopen("Num_positivos.txt", "w");
-    FILE* Cerozz = fopen("Cero.txt", "w");
+{
 
-    if( ArchivoPos ==  NULL)
+    FILE *ArchivoNotas;
+    ArchivoNotas = fopen("Notas", "w");
+
+    float resultado, Numeros, Cantidad, sumatoria = 0;
+
+    if (ArchivoNotas == NULL)
     {
-        printf("Error");
+        printf("ERROR");
         return 1;
     }
 
-    int Num;
+    printf("Cantidad de Notas o Numeros:");     //Pedirle al usuario que ingrese la cantidad de numeros que añadira
+    scanf("%f", &Cantidad);
 
-    do
+    for (int i = 0; i < Cantidad; i++)
     {
-        printf("Ingrese un numero positivo: ");
-        scanf("%d", &Num);
-        fprintf(ArchivoPos, "%d", Num);
-        fprintf(ArchivoPos, "\n");
+        printf("Escriba las Notas o numeros, para calcular su promedio: ");     //Le pedimos los numeros 
 
+        scanf("%f", &Numeros);
+
+        fprintf(ArchivoNotas, "%f", Numeros);
+
+        fprintf(ArchivoNotas, "\n");
+        sumatoria = sumatoria + Numeros;
+        resultado = sumatoria / Cantidad;
     }
-    while(Num != 0);
 
-    FILE *ArchivoPos = fopen("Num_positivos.txt", "r");
+    char ch;
 
-
-    int suma, cantidad, p;
-
-    double N;
-
-    int atoi(FILE *ArchivoPos);
-
-
-    for(int i=0 ; i<p; i++)
-    {  
-        suma= i+suma;
-    }  
+    ch = fgetc(ArchivoNotas);
     
-    N=suma/p;
+    while (ch != EOF)
+    {
+        printf("%c", ch);
+        ch = fgetc(ArchivoNotas);
+    }
 
-    printf("El promedio es: %lf",   N);
+    printf("El promedio de las Notas o numeros ingresados es: %f", resultado);
 
-
-
-
-
+    fclose(ArchivoNotas);
 
     return 0;
 }
