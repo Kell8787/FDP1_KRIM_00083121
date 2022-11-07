@@ -1,0 +1,48 @@
+1. ¿Que es ser autodidacta?
+
+Ser autodidacta es aprender por nuestros propios medios, sin la necesidad de que alguien como un
+maestro, instructor, nos ayude a aprender, o simplemente hay personas que son autodidactas porque
+no les gusta la manera de enseñar del maestro o porque tienen sus propios metodos de aprendizaje 
+ya que ser autodidacta tambien es aprender de manera en que la informacion nos entre mas facil
+
+
+
+
+2. ¿Que es una matriz?
+
+La matriz es un arreglo de datos, pero no estan ordenados en linea si no que estan ordenados
+binimensionalmente osea en filas y columnas. 
+
+Sintaxis de una Matriz:
+
+tipo nombre [tamaño 1][Tamaño 2]... 
+-Por ejemplo:
+
+#include <stdio.h>
+int main(){
+
+	int Numeros[3][4];
+
+return 0;
+}
+
+donde int: es el tipo
+Numeros: Es el nombre de la varibale
+[3]: es el tamaño
+[4]: es el tamaño
+
+
+Escriba 3 fuentes distintas para aprender a programas.
+
+1- Hay varios lugares en los que podemos aprender a programar, pero si queremos especidicarnos en 
+Programas en C, el canar Programación ATS (https://www.youtube.com/c/Programaci%C3%B3nATS) tiene un
+curso de programacion en C.
+
+2- Code Avengers Es un sitio web para desarrollar las habilidades de programacion y su ventaja es que 
+es algo sencillo de usar, cabe destacar que se destaca por programacion web con HTML y CSS. Ayuda a
+aprender Python. Tambien es importante mencionar que es gratuito pero para acceder a todas las 
+herramientas es necesario pagar.
+
+3- BitDegree Es un sitio web que ofrece cursos gratuitos de programacion y desarrollo de videojuegos
+tiene los lenguajes de programacion de: HTML, CSS, PHP, JavaScript, SQL, JQuery.
+Es importante mencionar que tiene logros para que la empresa pueda contratar talentos en tecnologias.
